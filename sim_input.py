@@ -20,7 +20,7 @@ tilt_servo = board.get_pin('d:10:s') # Servo on digital pin 10
 time.sleep(2)  # Give time to initialize
 
 # === Model and Tracker ===
-model = YOLO("yolo11l.pt")
+model = YOLO("best.pt")
 tracker = DeepSort(max_age=30, n_init=3, nn_budget=100)
 cap = cv2.VideoCapture(0)  # Or use 0 for webcam
 
